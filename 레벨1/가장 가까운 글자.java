@@ -4,7 +4,6 @@ class Solution {
     public int[] solution(String s) {
         int[] answer = new int[s.length()];
         HashMap<Character, Integer> map = new HashMap<>();
-        
         for(int i = 0; i<s.length(); i++) {
             int location = s.indexOf(s.charAt(i));
             if(location < i) {
